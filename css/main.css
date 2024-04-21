@@ -1,47 +1,96 @@
-/**
-Sample css code
-*/
-/* Set height to 100% for body and html to enable the background image to cover the whole page: */
-body,
-html {
-  height: 100%;
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
 }
 
-/*Set background image*/
-.container {
-  background-image: url('https://doc-10-ao-docs.googleusercontent.com/docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/r085o9ungppbiokopob2sfbekae4uqbb/1537920000000/14802840322886517493/*/110cT8sl-pOiHGgj9yToPkAqAzrr-RNfb');
-  height: 100%;
-  background-position: center;
-  background-size: cover;
+body {
+    font-family: "Roboto", sans-serif;
+    background: url('../img/usf dining.jpg');
+    backdrop-filter: blur(10px);
+    height: 100vh;
 }
 
-/* Position text in the middle */
-.middle {
-  position: absolute;
-  color: beige;
-  top: 70%;
-  left: 39%;
-  text-align: center;
-  font-size: 25px;
+.header-content {
+    display: flex;
 }
 
-/*Set circle in unordered list*/
-.middle ul {
-  list-style-type: circle;
+.logo {
+    width: 200px;
+    margin: 100px auto 50px;
 }
 
-/*Set text inside li tag to left*/
-.middle ul li {
-  text-align: left !important;
+nav ul {
+    list-style: none;
+    text-align: center;
 }
 
-/*Set text color for a tag inside middle class and ul>li element*/
-.middle ul li a {
-  color: beige;
+nav a {
+    background-color: #f0f0f0;
 }
 
-/*Change text color and decoration for a tags inside middle class and ul>li element*/
-.middle ul li a:hover {
-  color: red;
-  text-decoration: none;
+section#restaurants ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+    section#restaurants ul li {
+        margin: 50px;
+        text-align: center;
+        list-style: none;
+    }
+
+        section#restaurants ul li img {
+            width: 250px;
+            height: 250px;
+            border-radius: 20px;
+        }
+
+.restaurant-logo-container {
+    position: relative;
+    display: inline-block;
+    color: #fff;
+}
+
+    .restaurant-logo-container .info-on-hover {
+        top: 50%;
+        transform: translate(-50%, -50%);
+        color: black;
+    }
+
+    .restaurant-logo-container:hover .info-on-hover {
+        display: block;
+    }
+
+.button {
+    padding: 10px 20px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+    .button:hover {
+        background-color: transparent;
+        color: #fff;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    }
+
+.info-on-hover {
+    display: none;
+    position: absolute;
+    left: 50%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.6);
 }

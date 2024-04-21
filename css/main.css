@@ -5,7 +5,8 @@ body, h1, h2, h3, p, ul, li {
 
 body {
     font-family: "Roboto", sans-serif;
-    background: url('../img/usf dining.jpg');
+    background: url('../img/usfdining.jpg');
+    background-size: cover;
     backdrop-filter: blur(10px);
     height: 100vh;
 }
@@ -79,9 +80,11 @@ section#restaurants ul {
     display: none;
     position: absolute;
     left: 50%;
-    width: 100%;
+    width:100%;
+    text-align: center;
     background-color: rgba(255, 255, 255, 0.8);
     padding: 10px;
+    border: 1px solid #ddd;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }

@@ -1,14 +1,22 @@
-/**
- * Your JS code here
- */
+let slideIndex = 1;
 
-/**
- * Sample code
- */
-document.addEventListener('DOMContentLoaded', function() {
-  var ulElement = document.getElementById('links');
-  var liElement = document.createElement('li');
-  liElement.appendChild(document.createTextNode('created by main.js'));
+function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("carousel-item");
+    if (n > slides.length) { slideIndex = 1; }
+    if (n < 1) { slideIndex = slides.length; }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slides[slideIndex - 1].style.display = "block";
+}
 
-  ulElement.appendChild(liElement);
-});
+function prevSlide() {
+    showSlides(slideIndex -= 1);
+}
+
+function nextSlide() {
+    showSlides(slideIndex += 1);
+}
+
+showSlides(slideIndex);

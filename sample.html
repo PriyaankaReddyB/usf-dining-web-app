@@ -4,20 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panera Bread - USF Dining</title>
-    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/menu.css"> 
 </head>
 
 <body>
     <div class="panera-background">
         <div class="container">
-
+            <nav>
+                <ul>
+                    <li><a href="restaurants.html" class="back-button">Back</a></li>
+                </ul>
+            </nav>
             <header>
                 <img src="img/usfdininglogo.png" alt="USF Dining Logo" class="logo">
             </header>
             <nav>
                 <ul>
-                    <li><a class="button">About Us</a></li>
-                    <li><a class="button">Proceed to Checkout</a></li>
+                    <li><a href="aboutus.html" class="button">About Us</a></li>
+                    <li><a href="payment.html" class="button">Proceed to Checkout</a></li>
                 </ul>
             </nav>
             <main>
@@ -47,7 +51,8 @@
                                     <p class="dish-name">Broccoli Cheddar Soup</p>
                                 </div>
                             </div>
-
+                            <button class="carousel-prev" onclick="prevSlide()">❮</button>
+                            <button class="carousel-next" onclick="nextSlide()">❯</button>
                         </div>
                     </section>
 
@@ -112,9 +117,9 @@
                     <section id="social-media">
                         <h3>Follow Us</h3>
                         <div class="social-icons">
-                            <a><img src="img/facebookicon.png" alt="Facebook" class="small-icon"></a>
-                            <a><img src="img/twittericon.png" alt="Twitter" class="small-icon"></a>
-                            <a><img src="img/instagramicon.png" alt="Instagram" class="small-icon"></a>
+                            <a href="https://www.facebook.com/PaneraBread/" target="_blank"><img src="img/facebookicon.png" alt="Facebook" class="small-icon"></a>
+                            <a href="https://twitter.com/panerabread" target="_blank"><img src="img/twittericon.png" alt="Twitter" class="small-icon"></a>
+                            <a href="https://www.instagram.com/panerabread/?hl=en" target="_blank"><img src="img/instagramicon.png" alt="Instagram" class="small-icon"></a>
                         </div>
                     </section>
                 </div>

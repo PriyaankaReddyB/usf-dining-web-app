@@ -147,7 +147,27 @@ section#menu .carousel-item {
         margin-top: 50px;
     }
 
+section#menu .carousel-prev,
+section#menu .carousel-next {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 12px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-top: 50px;
+}
 
+section#menu .carousel-prev {
+    left: -50px;
+}
+
+section#menu .carousel-next {
+    right: -50px;
+}
 
 .flex-container {
     display: flex;

@@ -1,0 +1,137 @@
+﻿body {
+    font-family: Arial;
+    font-size: 17px;
+    background-image: url('../img/usfdining.jpg');
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(10px);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -16px;
+}
+
+.billing,
+.payment {
+    flex: 50%;
+    padding: 0 16px;
+    margin-bottom: 20px;
+}
+
+.container {
+    background-color: rgba(242, 242, 242, 0.8);
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+}
+
+input[type=text],
+input[type=email] {
+    width: calc(100% - 24px); 
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+label {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.btn {
+    background-color: #657000;
+    color: white;
+    padding: 12px;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+    .btn:hover {
+        background-color: black;
+        color:white;
+    }
+
+a {
+    color: #657000;
+}
+
+hr {
+    border: 1px solid lightgrey;
+}
+
+span.price {
+    float: right;
+    color: grey;
+}
+
+.order-summary {
+    margin-bottom: 20px;
+    margin-top:20px;
+}
+
+.cart-details {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 10px;
+}
+
+.cart-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.cart-items {
+    margin-bottom: 10px;
+}
+
+    .cart-items p {
+        margin: 0;
+    }
+
+        .cart-items p:last-child {
+            margin-bottom: 0;
+        }
+
+.total {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.order-summary .section-title {
+    margin-top: 0;
+}
+
+.checkout-btn {
+    position: fixed;
+    bottom: 20px; 
+    right: 20px; 
+    margin-bottom:20px;
+}
+
+footer {
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+
+
+
+
+
+
+
+

@@ -1,1 +1,129 @@
-﻿
+﻿body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #005432; /* Background color */
+    color: #CFC493;
+}
+
+header {
+    background-color: #005432;
+    color: #CFC493;
+    text-align: center;
+    padding: 20px 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: xx-large;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 10px;
+}
+
+    nav ul li {
+        display: inline;
+        margin-right: 10px;
+    }
+
+main {
+    padding: 20px;
+}
+
+.about-us {
+    color: #FEF2ED; /* White text */
+    padding: 20px; /* Some padding around the text */
+    margin: 20px 0; /* Margin at the top and bottom */
+}
+
+.overview {
+    background-color: #f9f9f9; /* Light gray background */
+    color: #FEF2ED;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+}
+
+
+
+.team-members {
+    display: flex; /* Use flexbox */
+    justify-content: space-between; /* Space items evenly */
+    flex-wrap: nowrap; /* Wrap items to the next line if needed */
+}
+
+.team-member {
+    background-color: #005432;
+    padding: 20px;
+    color: #FEF2ED;
+    margin: 10px; /* Space around each team member */
+
+    text-align: center; /* Center text */
+}
+
+.github-link {
+    text-align: left; /* Center align the GitHub icon */
+    margin-top: 10px; /* Add some space at the top */
+}
+
+    .github-link img {
+        margin-left: 5px; /* Add a small margin to separate the icon from text */
+    }
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px; /* Rounded corners */
+    margin-bottom: 20px; /* Spacing at the bottom */
+}
+
+.team-member-details {
+    text-align: left; /* Align text to the left */
+    text-align: center;
+}
+
+.team-member h2 {
+    color: #CFC493;
+    margin-top: 0; /* Remove top margin */
+}
+
+.team-member p {
+    margin-bottom: 10px;
+}
+
+.team-member a {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    background-color: white;
+}
+
+    .button:hover {
+        background-color: white;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+        transform: translateY(-3px);
+    }
+
+footer {
+    background-color: #CFC493;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+

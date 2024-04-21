@@ -54,8 +54,9 @@
 }
 
 input[type=text],
-input[type=email] {
-    width: calc(100% - 24px); 
+input[type=email],
+input[type=tel] {
+    width: calc(100% - 24px);
     margin-bottom: 20px;
     padding: 12px;
     border: 1px solid #ccc;

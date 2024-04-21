@@ -1,0 +1,317 @@
+﻿body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 5px;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #fff;
+    position: relative;
+}
+
+.panera-background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    z-index: -1;
+    background-color: #657000;
+}
+
+header img {
+    display: block;
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 10px;
+}
+
+    nav ul li {
+        display: inline;
+        margin-right: 10px;
+    }
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 8px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+    nav a.button {
+        background-color: #f0f0f0;
+    }
+
+        nav a.button:hover {
+            background-color: #ddd;
+        }
+
+main {
+    margin: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+    section#restaurant-info,
+    section#location {
+        text-align: center;
+    }
+
+    section#menu ul {
+        list-style-type: none;
+    }
+
+        section#menu ul li {
+            margin-bottom: 10px;
+        }
+
+footer {
+    background-color: #E51636;
+    padding: 20px 0;
+    color: white;
+    text-align: center;
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 30px auto;
+    margin-bottom: 30px;
+}
+
+section#restaurant-info h2,
+section#menu h3,
+section#menu p,
+section#location h3,
+section#timings h3 {
+    color: black;
+    text-align: center;
+    font-style: italic;
+}
+
+section#price h3 {
+    color: black;
+}
+
+section#menu h3 {
+    text-align: center;
+}
+
+section#menu h4 {
+    color: #333;
+}
+
+section#location p, section#timings p {
+    font-style: italic;
+}
+
+.restaurant-image-small {
+    width: 150px;
+    height: auto;
+    border-radius: 5px;
+}
+
+section#restaurant-info img.restaurant-image-small {
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+}
+
+section#menu .carousel {
+    max-width: 400px;
+    margin: 0 auto;
+    position: relative;
+}
+
+section#menu .carousel-item {
+    flex: 0 0 auto;
+    margin-right: 10px;
+    scroll-snap-align: start;
+    text-align: center;
+    height: 200px;
+}
+
+    section#menu .carousel-item img {
+        max-width: 100%;
+        height: 100%;
+        border-radius: 5px;
+        margin-top: 50px;
+    }
+
+
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#menu {
+    flex-basis: 45%;
+    background-color: #f0f0f0;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+#price {
+    flex-basis: 45%;
+    padding: 40px 40px 40px 100px;
+}
+
+.dish-name {
+    display: inline-block;
+    width: 300px;
+}
+
+section#timings {
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    margin-top: 30px;
+    color: white;
+}
+
+    section#timings h3 {
+        color: white;
+        text-align: right;
+    }
+
+    section#timings p {
+        text-align: right;
+    }
+
+section#location {
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    margin-top: 50px;
+    color: white;
+}
+
+    section#location h3 {
+        color: white;
+        text-align: left;
+    }
+
+    section#location p {
+        text-align: left;
+    }
+
+.button, .back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+    .button:hover {
+        background-color: transparent;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+        transform: translateY(-3px);
+    }
+
+.ratings {
+    margin-bottom: 20px;
+}
+
+.rating-value {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.stars {
+    font-size: 24px;
+    color: #FFD700;
+}
+
+section#social-media {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+    .social-icons a {
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+.small-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.add-to-cart-button {
+    background-color: #E51636;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 100px;
+}
+
+.panera-background #price .add-to-cart-button {
+    background-color: #657000;
+}
+
+.panera-background footer {
+    background-color: #657000;
+}
+
+
+.back-button:hover {
+    background-color: white;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    transform: translateY(-3px);
+}
+
+.back-button {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    background-color: white;
+}
+
+section#ratings-reviews {
+    text-align: left;
+    float: left;
+    margin-top: 40px;
+    width: 50%;
+}
+
+section#social-media {
+    text-align: right;
+    float: right;
+    margin-top: 40px;
+    width: 50%;
+}
+
+section#contact-info li {
+    list-style-type: none;
+    text-align:center;
+}
+
+

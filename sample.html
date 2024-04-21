@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panera Bread - USF Dining</title>
-    <link rel="stylesheet" href="css/menu.css"> 
+    <link rel="stylesheet" href="css/menu.css">
+    <script src="js/addToCart.js" defer></script>
 </head>
 
 <body>
@@ -18,6 +19,11 @@
             <header>
                 <img src="img/usfdininglogo.png" alt="USF Dining Logo" class="logo">
             </header>
+            <div id="cart">
+                <img src="img/carticon.png" alt="Cart">
+                <span id="cart-count">0</span>
+            </div>
+
             <nav>
                 <ul>
                     <li><a href="aboutus.html" class="button">About Us</a></li>
@@ -40,15 +46,21 @@
                             <div class="carousel-inner">
                                 <div class="carousel-item">
                                     <img src="img/paneraturkeysandwich.png" alt="Turkey Sandwich">
-                                    <p class="dish-name">Turkey Sandwich</p>
+                                    <p class="special-offer">
+                                        Deliciously Savored, Now Even More Tempting: Enjoy Our Turkey Sandwiches at a Special Discount!
+                                    </p>
                                 </div>
                                 <div class="carousel-item">
                                     <img src="img/paneragreeksalad.jpeg" alt="Greek Salad">
-                                    <p class="dish-name">Greek Salad</p>
+                                    <p class="special-offer">
+                                        Savor the Freshness of Greece at a Special Price: Dive Into Our Discounted Greek Salad Today!s
+                                    </p>
                                 </div>
                                 <div class="carousel-item">
                                     <img src="img/paneracheddarsoup.jpg" alt="Broccoli Cheddar Soup">
-                                    <p class="dish-name">Broccoli Cheddar Soup</p>
+                                    <p class="special-offer">
+                                        Warm Up Your Day with Our Creamy Broccoli Cheddar Soup, Now Available at a Special Price!
+                                    </p>
                                 </div>
                             </div>
                             <button class="carousel-prev" onclick="prevSlide()">❮</button>
@@ -62,27 +74,27 @@
                             <li>
                                 <span class="dish-name">Turkey Sandwich</span>:
                                 <span class="price">$8.99</span>
-                                <button class="add-to-cart-button">Add to Cart</button>
+                                <button class="add-to-cart-button" onclick="addToCart('Turkey Sandwich', 8.99)">Add to Cart</button>
                             </li>
                             <li>
                                 <span class="dish-name">Greek Salad</span>:
                                 <span class="price">$7.49</span>
-                                <button class="add-to-cart-button">Add to Cart</button>
+                                <button class="add-to-cart-button" onclick="addToCart('Greek Salad', 7.49)">Add to Cart</button>
                             </li>
                             <li>
                                 <span class="dish-name">Broccoli Cheddar Soup</span>:
                                 <span class="price">$5.99</span>
-                                <button class="add-to-cart-button">Add to Cart</button>
+                                <button class="add-to-cart-button" onclick="addToCart('Broccoli Cheddar Soup', 5.99)">Add to Cart</button>
                             </li>
                             <li>
                                 <span class="dish-name">Bacon Turkey Bravo Sandwich</span>:
                                 <span class="price">$9.99</span>
-                                <button class="add-to-cart-button">Add to Cart</button>
+                                <button class="add-to-cart-button" onclick="addToCart('Bacon Turkey Bravo Sandwich', 9.99)">Add to Cart</button>
                             </li>
                             <li>
                                 <span class="dish-name">Mac & Cheese</span>:
                                 <span class="price">$6.99</span>
-                                <button class="add-to-cart-button">Add to Cart</button>
+                                <button class="add-to-cart-button" onclick="addToCart('Mac & Cheese', 6.99)">Add to Cart</button>
                             </li>
                         </ul>
                     </section>

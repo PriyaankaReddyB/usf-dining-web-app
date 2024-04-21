@@ -6,23 +6,27 @@
     <title>Payment</title>
     <link rel="stylesheet" href="css/payment.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="js/displayCartItems.js" defer></script>
 </head>
 
 <body>
 
     <div class="container">
+        <nav>
+            <ul>
+                <li><a href="sample.html" class="back-button">Back</a></li>
+            </ul>
+        </nav>
         <div>
             <div class="order-summary">
                 <h3 class="section-title">Order Summary</h3>
                 <div class="cart-details">
-                    <h4 class="cart-title">Cart <span>4</span></h4>
-                    <div class="cart-items">
-                        <p><a>Turkey Sandwich X 2</a> <span class="price">$17.98</span></p>
-                        <p><a>Bacon Turkey Bravo Sandwich</a> <span class="price">$9.99</span></p>
-                        <p><a>Broccoli Cheddar Soup</a> <span class="price">$5.99</span></p>
-                        <hr>
-                        <p class="total">Total <span class="price">$33.96</span></p>
+                    <h4 class="cart-title">Cart : <span id="cartItemCount">0</span></h4>
+                    <div class="cart-items" id="cartItemsContainer">
+
                     </div>
+                    <hr>
+                    <p class="total">Total <span class="price">$0.00</span></p>
                 </div>
             </div>
             <div class="row">
@@ -94,11 +98,11 @@
                             <input type="text" id="cvv" name="cvv" placeholder="352" required>
                         </div>
                         <div class="checkout-btn">
-                            <a href="index.html" class="btn">Paynow</a>
+                            <a class="btn">Paynow</a>
                         </div>
                     </form>
                 </div>
-                
+
             </div>
         </div>
     </div>

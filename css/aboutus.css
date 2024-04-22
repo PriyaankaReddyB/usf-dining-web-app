@@ -77,6 +77,7 @@ main {
     object-fit: cover;
     border-radius: 8px; /* Rounded corners */
     margin-bottom: 20px; /* Spacing at the bottom */
+    box-shadow: 0 6px 8px #CFC493; /* Add shadow for depth */
 }
 
 .team-member-details {
@@ -126,4 +127,23 @@ footer {
     text-align: center;
     padding: 10px 0;
 }
+.data-model,
+.charting {
+    text-align: center; /* Center align images */
+    margin-top: 20px;   /* Add some space at the top */
+}
+
+.data-model img,
+.charting img {
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px #CFC493; /* Add shadow for depth */
+    margin-bottom: 6px; /* Space between image and caption */
+}
+
+.data-model p,
+.charting p {
+    color: #CFC493; /* Caption color */
+    font-weight: bold; /* Caption font weight */
+}
+
 

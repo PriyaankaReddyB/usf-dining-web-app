@@ -98,13 +98,13 @@ footer {
     padding: 20px 0;
 }
 
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: 1000px) {
     footer {
         position: relative; 
     }
 }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 1000px) {
     body {
         height: 100vh; 
     }

@@ -2,7 +2,7 @@
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #005432; /* Background color */
+    background-color: #005432;
     color: #CFC493;
 }
 
@@ -31,13 +31,13 @@ main {
 }
 
 .about-us {
-    color: #FEF2ED; /* White text */
-    padding: 20px; /* Some padding around the text */
-    margin: 20px 0; /* Margin at the top and bottom */
+    color: #FEF2ED;
+    padding: 20px;
+    margin: 20px 0;
 }
 
 .overview {
-    background-color: #f9f9f9; /* Light gray background */
+    background-color: #f9f9f9;
     color: #FEF2ED;
     padding: 20px;
     margin-bottom: 20px;
@@ -48,46 +48,45 @@ main {
 
 
 .team-members {
-    display: flex; /* Use flexbox */
-    justify-content: space-between; /* Space items evenly */
-    flex-wrap: nowrap; /* Wrap items to the next line if needed */
+    display: flex; 
+    justify-content: space-between;
+    flex-wrap: nowrap; 
 }
 
 .team-member {
     background-color: #005432;
     padding: 20px;
     color: #FEF2ED;
-    margin: 10px; /* Space around each team member */
-
-    text-align: center; /* Center text */
+    margin: 10px; 
+    text-align: center; 
 }
 
 .github-link {
-    text-align: left; /* Center align the GitHub icon */
-    margin-top: 10px; /* Add some space at the top */
+    text-align: left;
+    margin-top: 10px;
 }
 
     .github-link img {
-        margin-left: 5px; /* Add a small margin to separate the icon from text */
+        margin-left: 5px; 
     }
 
 .team-member img {
     width: 150px;
     height: 150px;
     object-fit: cover;
-    border-radius: 8px; /* Rounded corners */
-    margin-bottom: 20px; /* Spacing at the bottom */
-    box-shadow: 0 6px 8px #CFC493; /* Add shadow for depth */
+    border-radius: 8px; 
+    margin-bottom: 20px;
+    box-shadow: 0 6px 8px #CFC493; 
 }
 
 .team-member-details {
-    text-align: left; /* Align text to the left */
+    text-align: left; 
     text-align: center;
 }
 
 .team-member h2 {
     color: #CFC493;
-    margin-top: 0; /* Remove top margin */
+    margin-top: 0;
 }
 
 .team-member p {
@@ -129,21 +128,63 @@ footer {
 }
 .data-model,
 .charting {
-    text-align: center; /* Center align images */
-    margin-top: 20px;   /* Add some space at the top */
+    text-align: center; 
+    margin-top: 20px;   
 }
 
 .data-model img,
 .charting img {
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 8px #CFC493; /* Add shadow for depth */
-    margin-bottom: 6px; /* Space between image and caption */
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px #CFC493; 
+    margin-bottom: 6px;
 }
 
 .data-model p,
 .charting p {
-    color: #CFC493; /* Caption color */
-    font-weight: bold; /* Caption font weight */
+    color: #CFC493;
+    font-weight: bold; 
 }
 
+@media only screen and (max-width: 768px) {
+    .about-us,
+    .team-member,
+    .data-model,
+    .charting {
+        padding: 10px;
+    }
+
+    .team-members {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-member {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+        .team-member img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+
+        .team-member h2 {
+            font-size: 18px;
+        }
+
+        .team-member h4 {
+            font-size: 14px;
+        }
+
+        .team-member p {
+            font-size: 14px;
+        }
+
+    .data-model img,
+    .charting img {
+        width: 100%;
+        height: auto;
+    }
+}
 

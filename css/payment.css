@@ -149,7 +149,7 @@ footer {
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
-    align-items: center; /* vertically center items */
+    align-items: center;
 }
 
 .item-name {
@@ -158,7 +158,7 @@ footer {
 
 .item-price {
     text-align: right;
-    margin-right: 20px; /* Add space to the right */
+    margin-right: 20px;
 }
 
 .item-details {

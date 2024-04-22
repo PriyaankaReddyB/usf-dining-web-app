@@ -145,26 +145,6 @@ section#menu .carousel-item {
         border-radius: 5px;
     }
 
-section#menu .carousel-prev,
-section#menu .carousel-next {
-    background-color: #000;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    font-size: 24px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-section#menu .carousel-prev {
-    left: -50px;
-}
-
-section#menu .carousel-next {
-    right: -50px;
-}
-
 .flex-container {
     display: flex;
     justify-content: space-between;
@@ -258,6 +238,7 @@ section#location {
 .stars {
     font-size: 24px;
     color: #FFD700;
+    padding-left:10px;
 }
 
 section#social-media {
@@ -363,6 +344,32 @@ section#contact-info li {
     font-size: 20px;
 }
 
+.carousel-prev,
+.carousel-next {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+}
+
+.carousel-prev {
+    left: -50px;
+}
+
+.carousel-next {
+    right: -50px;
+}
+
+    .carousel-prev:hover,
+    .carousel-next:hover {
+        background-color: #333;
+    }
+
 @media only screen and (max-width: 768px) {
     .flex-container {
         flex-direction: column;
@@ -394,3 +401,10 @@ section#contact-info li {
     }
 
 }
+
+.checked {
+    color: orange;
+}
+
+
+

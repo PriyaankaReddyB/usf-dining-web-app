@@ -148,16 +148,25 @@ footer {
 .cart-item {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10px; /* Add space between each cart item */
+    margin-bottom: 10px;
+    align-items: center; /* vertically center items */
 }
 
 .item-name {
-    margin-right: 10px; /* Add space between item name and price */
+    margin-right: 10px; 
 }
 
 .item-price {
-    margin-left: 10px; /* Add space between item name and price */
+    text-align: right;
+    margin-right: 20px; /* Add space to the right */
+}
+
+.item-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    padding: 10px;
 }
 
 .btn:hover {

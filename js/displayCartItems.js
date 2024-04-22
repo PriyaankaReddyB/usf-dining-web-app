@@ -8,8 +8,10 @@ function displayCartItems() {
         var itemElement = document.createElement("div");
         itemElement.classList.add("cart-item");
         itemElement.innerHTML = `
-            <p class="item-name">${item.name}</p>
-            <p class="item-price">$${item.price.toFixed(2)}</p>
+            <div class="item-details">
+                <p class="item-name">${item.name}</p>
+                <p class="item-price">$${item.price.toFixed(2)}</p>
+            </div>
             <button class="delete-button" onclick="deleteItem(${index})">Delete</button>
         `;
         cartItemsContainer.appendChild(itemElement);

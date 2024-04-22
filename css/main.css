@@ -5,10 +5,10 @@ body, h1, h2, h3, p, ul, li {
 
 body {
     font-family: "Roboto", sans-serif;
-    background: url('../img/usfdining.jpg');
+    background: url('../img/usfdining.jpg') fixed no-repeat center;
     background-size: cover;
     backdrop-filter: blur(10px);
-    height: 100vh;
+    background-repeat: repeat;
 }
 
 .header-content {
@@ -91,9 +91,21 @@ section#restaurants ul {
 
 footer {
     text-align: center;
-    padding: 20px 0;
     position: fixed;
     width: 100%;
-    bottom: 0;
     background-color: rgba(255, 255, 255, 0.6);
+    bottom:0;
+    padding: 20px 0;
+}
+
+@media only screen and (max-width: 769px) {
+    footer {
+        position: relative; 
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    body {
+        height: 100vh; 
+    }
 }

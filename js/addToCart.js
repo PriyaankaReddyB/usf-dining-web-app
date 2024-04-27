@@ -103,7 +103,7 @@ function updateSalesChart() {
         data: {
             labels: labels,
             datasets: [{
-                label: 'Daily Sales Amount($)',
+                label: 'Daily Sales Amount($) of each item',
                 data: data,
                 backgroundColor: restaurantData.logo_color,
                 borderColor: restaurantData.logo_color,
@@ -121,38 +121,34 @@ function updateSalesChart() {
 }
 
 function averageSalesChart() {
-
     var ctx = document.getElementById('averageSales').getContext('2d');
 
     var myChart = new Chart(ctx, {
-        type: 'bar',
+        type: 'line', 
         data: {
-            labels: ['Chick-Fil-A', 'Panera', 'Panda Express', 'Subway'],
             datasets: [{
                 label: 'Avg Sales Per Day',
-                data: [5438, 3645, 2344, 3435],
-                backgroundColor: [
-                    '#E51636',
-                    '#657000',
-                    '#ff0000',
-                    '#028940'
-
+                data: [
+                    { x: 'Chick-Fil-A', y: 5438 },
+                    { x: 'Panera', y: 3645 },
+                    { x: 'Panda Express', y: 2344 },
+                    { x: 'Subway', y: 3435 }
                 ],
-                borderWidth: 1
+                backgroundColor: 'black', 
+                pointRadius: 8 
             }]
         },
         options: {
             scales: {
+                x: {
+                    type: 'category', 
+                    labels: ['Chick-Fil-A', 'Panera', 'Panda Express', 'Subway']
+                },
                 y: {
                     beginAtZero: true
                 }
             }
         }
     });
-
 }
-
-
-
-
 

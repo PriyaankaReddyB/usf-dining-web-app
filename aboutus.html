@@ -6,8 +6,9 @@
     <title>About us</title>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="stylesheet" href="css/aboutus.css">
+
 </head>
 <body>
     <header>
@@ -19,34 +20,30 @@
         </ul>
     </nav>
     <div class="about-us">
-        <h1 style="color: #CFC493;"><b>Overview :</b></h1>
+        <h1 style="color: black;"><b>Overview</b></h1>
         <p>Meet our Group11 team! We're the folks behind the scenes of Assignment3's Weblook and Feel. Our group is made up of friendly and hardworking people who build the parts of the website that help you order what you want, share your thoughts, and find out all about our special dining spots. We put everything together like a puzzle, so you can easily click, read, and enjoy without any fuss. We're excited to show you what we've made, just for you!</p>
     </div>
 
 
     <div class="team-members">
         <div class="team-member">
-            <img src="img/pradeepsample.jpg" alt="Pradeep">
-            <h2>Pradeep Chand Potturi</h2>
-            <h4>pradeepchand@usf.edu | MS in BAIS</h4>
-
-            <p> <b>"</b>Pradeep is an ETL Engineer with over one and half years experience at multiple organizations.
-                       His contribution in this assignment include creating detailed page, data model and chart<b>"</b></p>
-        </div>
-        <div class="team-member">
             <img src="img/priyanka.jpg" alt="Priyaanka Reddy Boothukuri">
             <h2>Priyaanka Reddy Boothukuri</h2>
             <h4>priyaankareddy@usf.edu | MS in BAIS</h4>
             <p>
-                <b>"</b>Priyaanka is a full-stack developer with one year of experience. She was the driving force behind the concept of our dining website and is proficient in HTML and CSS. 
+                <b>"</b>Priyaanka is a full-stack developer with one year of experience. She was the driving force behind the concept of our dining website and is proficient in HTML and CSS.
                 She specifically worked on the payment page, navigation, and JavaScript functionalities, adding valuable contributions to the project.<b>"</b>
             </p>
         </div>
         <div class="team-member">
-            <img src="img/MANVITHA.jpg" alt="Manvitha">
-            <h2>Manvitha Nagandla</h2>
-            <h4>manvithanagandla@usf.edu | MS in BAIS</h4>
-            <p> <b>"</b>Manvitha had a 2 years of work experience as Quality Assurance Analyst. Her contributions to the design of the homepage, including styling and charts, played a crucial role in the success of the project.<b>"</b> </p>
+            <img src="img/pradeepsample.jpeg" alt="Pradeep">
+            <h2>Pradeep Chand Potturi</h2>
+            <h4>pradeepchand@usf.edu | MS in BAIS</h4>
+
+            <p>
+                <b>"</b>Pradeep is an ETL Engineer with over one and half years experience at multiple organizations.
+                His contribution in this assignment include creating detailed page, data model and chart<b>"</b>
+            </p>
         </div>
         <div class="team-member">
             <img src="img/jayanthuppara.png" alt="Jayanth">
@@ -54,36 +51,50 @@
             <h4>jayanthuppara@usf.edu | MS in BAIS</h4>
             <p> <b>"</b>Here's Jayanth, our data engineer with a year of experience in AWS and ETL. He designed our About Us page, helping you understand our story and mission. Thanks to him, you can get to know us better and feel part of our team.<b>"</b> </p>
         </div>
+        <div class="team-member">
+            <img src="img/MANVITHA.jpg" alt="Manvitha">
+            <h2>Manvitha Nagandla</h2>
+            <h4>manvithanagandla@usf.edu | MS in BAIS</h4>
+            <p> <b>"</b>Manvitha had a 2 years of work experience as Quality Assurance Analyst. Her contributions to the design of the homepage, including styling and charts, played a crucial role in the success of the project.<b>"</b> </p>
+        </div>
 
+    </div>
+    <div id="graphsContainer">
+        <div style="text-align: center; margin-top: 20px;">
+            <h3>Deliciously Divided: Sales Graph for Breakfast, Lunch, and Dinner</h3>
+        </div>
+        <div class="pie-charts">
+            <div class="chart-container2">
+                <canvas id="paneraChart"></canvas>
+            </div>
+            <div class="chart-container2">
+                <canvas id="chickfilaChart"></canvas>
+            </div>
+            <div class="chart-container2">
+                <canvas id="pandaExpressChart"></canvas>
+            </div>
+            <div class="chart-container2">
+                <canvas id="subwayChart"></canvas>
+            </div>
+        </div>
     </div>
     <div class="data-model">
         <h3>Data Model</h3>
-        <img src="img/datamodel.png" alt="Data Model Image" width="700" height="400">
-        
+        <img src="img/datamodel.jpeg" alt="Data Model Image" width="700" height="400">
+
     </div>
-    
-    <div class="charting">
-        <h3>Chart</h3>
-        <img src="img/chart.png" alt="Charting Image" width="700" height="400">
-        
-    </div>
-    <div class="github-link">
-        <a href="https://github.com/PriyaankaReddyB/Assignment_LookAndFeel" target="_blank">
-            <img src="img/github-icon.png" alt="GitHub" width="100" height="100">
-            <p style="color: #f9f9f9;">Visit our GitHub repository</p>
-        </a>
-    </div>
+    <script src="js/pieChart.js"></script>
     <footer>
 
         <div class="footer">
             <div class="footer-contact">
                 <h3>Distributed Information Systems</h3>
                 <p>ISM6225.001S24</p>
-                <p>Assignment 3 - Weblook and Feel</p>
             </div>
             <div class="footer-social">
-                <a href="https://www.instagram.com/" target="_blank" title="Instagram">IG</a>
-                <a href="https://www.linkedin.com/" target="_blank" title="LinkedIn">IN</a>
+                <a href="https://www.instagram.com/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/PriyaankaReddyB/Assignment_LookAndFeel" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
             </div>
             <div class="footer-legal">
                 <a href="#" title="Privacy Policy">Privacy Policy</a>

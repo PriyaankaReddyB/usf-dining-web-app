@@ -69,7 +69,7 @@ label {
 }
 
 .btn,.delete-button {
-    background-color: #657000;
+    background-color: black;
     color: white;
     padding: 12px;
     border: none;
@@ -81,7 +81,7 @@ label {
 }
 
 a {
-    color: #657000;
+    color: black;
 }
 
 hr {
@@ -172,6 +172,10 @@ footer {
 .btn:hover {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
     transform: translateY(-3px);
+}
+
+input.invalid {
+    border-color: red;
 }
 
 

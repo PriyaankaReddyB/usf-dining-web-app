@@ -1,18 +1,17 @@
 ﻿body {
-    font-family: Arial, sans-serif;
+    font-family: "Roboto", sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #005432;
-    color: #CFC493;
+    background-color: #f9f9f9;
+    color: #444;
 }
 
 header {
     background-color: #005432;
-    color: #CFC493;
+    color: white;
     text-align: center;
-    padding: 20px 0;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: xx-large;
+    padding: 40px 0;
+    font-size: 2em;
 }
 
 nav ul {
@@ -26,76 +25,125 @@ nav ul {
         margin-right: 10px;
     }
 
-main {
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 20px;
 }
 
 .about-us {
-    color: #FEF2ED;
     padding: 20px;
-    margin: 20px 0;
-}
-
-.overview {
-    background-color: #f9f9f9;
-    color: #FEF2ED;
-    padding: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    background-color: white;
     border-radius: 8px;
-    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+    .about-us h1 {
+        color: #005432;
+        font-size: 1.5em;
+        margin-bottom: 20px;
+    }
 
+    .about-us p {
+        line-height: 1.6;
+    }
 
 .team-members {
-    display: flex; 
-    justify-content: space-between;
-    flex-wrap: nowrap; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .team-member {
     background-color: #005432;
+    color: white;
     padding: 20px;
-    color: #FEF2ED;
-    margin: 10px; 
-    text-align: center; 
+    margin: 10px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+    .team-member img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .team-member h2 {
+        font-size: 1.2em;
+        margin-top: 0;
+    }
+
+    .team-member h4 {
+        font-size: 0.9em;
+        margin-bottom: 10px;
+    }
+
+.data-model {
+    text-align: center;
+    margin-top: 20px;
+}
+
+    .data-model img {
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        margin-bottom: 10px;
+    }
+
 .github-link {
-    text-align: left;
-    margin-top: 10px;
+    text-align: center;
+    margin-top: 20px;
 }
 
     .github-link img {
-        margin-left: 5px; 
+        margin-bottom: 10px;
     }
 
-.team-member img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 8px; 
-    margin-bottom: 20px;
-    box-shadow: 0 6px 8px #CFC493; 
-}
-
-.team-member-details {
-    text-align: left; 
+footer {
     text-align: center;
+    background-color: #005432;
+    color: white;
+    padding: 20px 0;
 }
 
-.team-member h2 {
-    color: #CFC493;
-    margin-top: 0;
+
+.footer {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding:10px;
 }
 
-.team-member p {
-    margin-bottom: 10px;
+.footer-social {
+    font-size: 24px;
 }
 
-.team-member a {
-    display: inline-block;
-    margin-top: 10px;
+.footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+    .footer a:hover {
+        text-decoration: underline;
+    }
+
+
+@media only screen and (max-width: 768px) {
+    .team-member {
+        width: calc(50% - 20px);
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .team-member {
+        width: calc(100% - 20px);
+    }
 }
 
 .button {
@@ -112,6 +160,7 @@ main {
     top: 15px;
     left: 15px;
     background-color: white;
+    color:black;
 }
 
     .button:hover {
@@ -120,71 +169,20 @@ main {
         transform: translateY(-3px);
     }
 
-footer {
-    background-color: #CFC493;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-}
-.data-model,
-.charting {
-    text-align: center; 
-    margin-top: 20px;   
+.pie-charts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.data-model img,
-.charting img {
-    border-radius: 10px; 
-    box-shadow: 0 4px 8px #CFC493; 
-    margin-bottom: 6px;
+.chart-container2 {
+    flex: 0 0 calc(25% - 20px);
+    margin: 10px;
+    padding-bottom: 20px;
 }
 
-.data-model p,
-.charting p {
-    color: #CFC493;
-    font-weight: bold; 
-}
-
-@media only screen and (max-width: 1000px) {
-    .about-us,
-    .team-member,
-    .data-model,
-    .charting {
-        padding: 10px;
-    }
-
-    .team-members {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .team-member {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-        .team-member img {
-            width: 100px;
-            height: 100px;
-            margin-bottom: 10px;
-        }
-
-        .team-member h2 {
-            font-size: 18px;
-        }
-
-        .team-member h4 {
-            font-size: 14px;
-        }
-
-        .team-member p {
-            font-size: 14px;
-        }
-
-    .data-model img,
-    .charting img {
-        width: 100%;
-        height: auto;
-    }
+canvas {
+    width: 100% !important;
+    height: auto !important;
 }
 

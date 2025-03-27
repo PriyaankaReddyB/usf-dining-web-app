@@ -55,4 +55,4 @@ The USF Dining Web Application provides a user-friendly interface for exploring 
 - **Special Offers**: Check out the promotions and special deals in the special offers section.
 
 ## Access the Application
-You can access the web application at the following URL: [https://priyaankareddyb.github.io/usf-dining-web-app/](url)
+You can access the web application at the following URL: [USF Dining Web Application](https://priyaankareddyb.github.io/usf-dining-web-app/)

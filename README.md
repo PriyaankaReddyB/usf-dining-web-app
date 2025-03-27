@@ -53,3 +53,6 @@ The USF Dining Web Application provides a user-friendly interface for exploring 
 - **Navigation**: Use the navigation menu to browse different sections of the application.
 - **Order Management**: Add items to the cart, review the order summary, and proceed to checkout.
 - **Special Offers**: Check out the promotions and special deals in the special offers section.
+
+## Access the Application
+You can access the web application at the following URL: [https://priyaankareddyb.github.io/usf-dining-web-app/](url)
